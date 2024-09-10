@@ -21,7 +21,7 @@ interface StartupProps {
   };
 }
 
-export function Startup({ startup }: StartupProps) {
+export default function Startup({ startup }: StartupProps) {
   return (
     <TableRow>
       <TableCell className="font-medium">{startup.name}</TableCell>

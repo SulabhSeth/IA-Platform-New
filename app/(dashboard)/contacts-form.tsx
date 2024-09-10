@@ -25,9 +25,9 @@ export function ContactForm({ onSubmit, onCancel }: ContactFormProps) {
     agreement: null,
     contactNumber: '',
     email: '',
+    linkedinID: '',
     mentorType: '',
     contactType: '',
-    linkedIn: '',
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -145,12 +145,12 @@ export function ContactForm({ onSubmit, onCancel }: ContactFormProps) {
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="LinkedIn">LinkedIn ID</Label>
+            <Label htmlFor="email">LinkedIn ID</Label>
             <Input
-              id="LinkedIn"
-              name="LinkedIn"
-              type="LinkedIn"
-              value={formData.linkedIn}
+              id="linkedin"
+              name="linkedin"
+              type="linkedin"
+              value={formData.linkedinID}
               onChange={handleInputChange}
             />
           </div>

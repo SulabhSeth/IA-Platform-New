@@ -16,7 +16,7 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card';
-import { Startup } from './startup';
+import Startup from './startup';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, PlusCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -68,7 +68,7 @@ const dummyStartups = [
   }
 ];
 
-export function StartupsTable() {
+export default function StartupsTable() {
   const [startups, setStartups] = useState(dummyStartups);
   const [filter, setFilter] = useState('All');
   const [showNewStartupForm, setShowNewStartupForm] = useState(false);
